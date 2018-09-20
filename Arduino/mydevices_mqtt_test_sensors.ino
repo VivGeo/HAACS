@@ -1,14 +1,15 @@
 #include <CayenneMQTTESP8266.h>
+#include "keys.h"
 #define CAYENNE_DEBUG
 #define CAYENNE_PRINT Serial
 
 
-char ssid[] = "MHacks";
-char password[] = "MHacksMilestone";
+char ssid[] = key_ssid;
+char password[] = key_password;
 
-char username[] = "a5155990-a0a4-11e7-8c02-137ff2c4ffef";
-char mqtt_password[] = "3244a2b27d0e86e95f801f9b90dd6168026f08f0";
-char client_id[] = "d9317850-a0a7-11e7-b0e9-e9adcff3788e";
+char username[] = key_username;
+char mqtt_password[] = key_mqtt_password;
+char client_id[] = key_client_id;
 
 int reading = 0;
 
